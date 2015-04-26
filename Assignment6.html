@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <title>Shane Day Assignment 6</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment6.css"/>
+    <script src="js/Assignment6.js"></script>
+</head>
+
+<body onload="Hide()">
+    <div id="center">
+    <h1>Assignment 6</h1>
+    <select onchange="Change()"id="menu">
+        <option>Choose a section</option>
+        <option>Create Customer</option>
+        <option>Update Order Address</option>
+        <option>Delete Customer</option>
+    </select>
+    <br>
+    <section  id="create">
+    <hr>
+        <label>Please input Customer ID:</label>
+        <input type="text" id="custID">
+        <br>
+        <label class="example">(The Customer ID should be 5 uppercase text characters)</label>
+    <br>
+        <label>Please enter the Customer name:</label>
+        <input type="text" id="cusname">
+    <br>
+        <label>Please enter Customer city:</label>
+        <input type="text" id="cuscity"> 
+    <br>    
+        <button onclick="CreateCustomer()" id="newcust">Create New Customer</button>    
+    <hr>
+    <label id="createresult"></label>    
+        </section>
+        
+    <section id="update">
+    <hr>
+        <label>Please Enter the order number: </label>  
+        <input type="text" id="ordernum">  
+        <br> 
+        <label>Pleaes enter the Ship-To Name: </label> 
+        <input type="text" id="shipname">
+        <br>
+        <label>Please Enter the Ship-To Street Address:</label>
+        <input type="text" id="shipaddress">  
+        <br>  
+        <label>Pleaes enter the Ship-To City:</label>   
+        <input type="text" id="shipcity">   
+        <br>   
+        <label>Please Enter Ship-To Postal Code:</label>
+        <input type="text" id="shipcode">  
+        <br>   
+        <button onclick="UpdateOrderAddress()" id="updateaddress">Update Address</button>
+        <br>
+        <hr> 
+        <label id="updateresult"></label>
+    <br>
+    <hr>    
+        </section>
+    <section id="delete">
+    <hr>
+            <label>Please enter Customer ID to delete:</label>
+            <input type="text" id="CID">
+            <br>  
+            <button onclick="DeleteCustomer()" id="deletecustomer">Delete a Customer</button>
+            <hr>
+            <label id="deleteresult"></label>
+    <br>
+    <hr>
+    </section>
+    </div>  
+</body>
+</html>

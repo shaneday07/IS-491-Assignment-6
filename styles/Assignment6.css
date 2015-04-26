@@ -1,0 +1,40 @@
+body
+{
+    margin:50px 0px; padding:0px;
+    text-align: center;
+    background-color: rgb(0, 61, 122);
+    width: 400px;         
+}
+
+#center {
+     width:600px;
+	margin:0px auto;
+	text-align:center;
+	padding:15px;
+	border:1px dashed #333;
+        color: white;
+}
+section.create
+{
+    display: inline;
+    display: none;
+}
+
+section.update
+{
+    display: inline;
+    display: none;
+}
+
+section.delete
+{
+    display: inline;
+    display: none;
+}
+
+
+h1
+{
+    font-size: 30px;
+    text-align: center;
+}
